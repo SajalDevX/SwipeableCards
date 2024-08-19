@@ -1,0 +1,16 @@
+import 'package:flutter/material.dart';
+
+class StyledText extends StatelessWidget {
+    StyledText({this.counter=0,super.key });
+    int counter;
+ 
+  @override
+  Widget build(context) {
+    return Text(
+      "Home page \n Counter:$counter",
+      textAlign: TextAlign.center,
+      style: const TextStyle(
+          color: Colors.yellow, fontSize: 24, fontWeight: FontWeight.bold),
+    );
+  }
+}
